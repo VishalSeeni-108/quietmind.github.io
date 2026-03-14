@@ -22,11 +22,49 @@ body {
   margin: 0;
   font-family: "Trebuchet MS", "Segoe UI", sans-serif;
   color: var(--text);
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
   background:
-    radial-gradient(circle at top left, rgba(137, 184, 255, 0.22), transparent 24%),
-    radial-gradient(circle at top right, rgba(96, 125, 255, 0.2), transparent 30%),
-    radial-gradient(circle at 50% 10%, rgba(255, 255, 255, 0.08), transparent 18%),
-    linear-gradient(180deg, #081121 0%, #0b1830 55%, #050c18 100%);
+    radial-gradient(circle at 18% 16%, rgba(180, 217, 255, 0.18), transparent 18%),
+    radial-gradient(circle at 82% 12%, rgba(132, 156, 255, 0.2), transparent 22%),
+    radial-gradient(circle at 50% -8%, rgba(244, 248, 255, 0.16), transparent 26%),
+    radial-gradient(circle at 50% 38%, rgba(33, 56, 104, 0.18), transparent 38%),
+    linear-gradient(180deg, #020611 0%, #07111f 38%, #0a1831 68%, #02050d 100%);
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+body::before {
+  opacity: 0.82;
+  background-image:
+    radial-gradient(circle at 12% 20%, rgba(255, 255, 255, 0.9) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 26% 34%, rgba(220, 234, 255, 0.85) 0 1.2px, transparent 1.8px),
+    radial-gradient(circle at 72% 18%, rgba(255, 255, 255, 0.85) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 58% 24%, rgba(245, 249, 255, 0.78) 0 0.9px, transparent 1.5px),
+    radial-gradient(circle at 84% 32%, rgba(220, 234, 255, 0.75) 0 1.2px, transparent 1.9px),
+    radial-gradient(circle at 64% 52%, rgba(255, 255, 255, 0.7) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 18% 62%, rgba(220, 234, 255, 0.8) 0 1.1px, transparent 1.8px),
+    radial-gradient(circle at 32% 56%, rgba(245, 249, 255, 0.7) 0 0.9px, transparent 1.5px),
+    radial-gradient(circle at 88% 68%, rgba(255, 255, 255, 0.82) 0 1.1px, transparent 1.8px),
+    radial-gradient(circle at 40% 78%, rgba(220, 234, 255, 0.72) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 8% 84%, rgba(255, 255, 255, 0.78) 0 1.1px, transparent 1.8px),
+    radial-gradient(circle at 74% 88%, rgba(220, 234, 255, 0.7) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 52% 72%, rgba(245, 249, 255, 0.72) 0 0.9px, transparent 1.5px),
+    radial-gradient(circle at 92% 14%, rgba(255, 255, 255, 0.68) 0 0.9px, transparent 1.5px);
+  background-repeat: no-repeat;
+}
+
+body::after {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(130, 164, 255, 0.18), transparent 32%),
+    radial-gradient(circle at 50% 100%, rgba(7, 17, 31, 0.12), transparent 38%);
 }
 
 .media-page,
